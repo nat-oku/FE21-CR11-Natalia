@@ -12,7 +12,7 @@ if ( isset($_SESSION["user"])) {
    exit;
 }
 
-$id = $_SESSION['adm' ];
+$userID = $_SESSION['adm' ];
 $status = 'adm';
 $sqlSelect = "SELECT * FROM user WHERE status != ? ";
 $stmt = $connect->prepare($sqlSelect);
@@ -28,8 +28,10 @@ if ($result->num_rows > 0) {
            <td>" . $row['first_name'] . " " . $row['last_name'] . "</td>
            <td>" . $row['date_of_birth'] . "</td>
            <td>" . $row['email'] . "</td>
-           <td><a href='update.php?id=" . $row['id'] . "'><button class='btn btn-primary btn-sm' type='button'>Edit</button></a>
-           <a href='delete.php?id=" . $row['id'] . "'><button class='btn btn-danger btn-sm' type='button'>Delete</button></a></td>
+           <td class=''>
+            <a href='update.php?userID=" . $row['userID'] . "'><button class='btn btn-primary btn-sm w-100 mb-1' type='button'>Edit</button></a>
+            <a href='delete.php?userID=" . $row['userID'] . "'><button class='btn btn-danger btn-sm w-100 mt-1' type='button'>Delete</button></a>
+           </td>
         </tr>";
    }
 } else {
@@ -99,7 +101,7 @@ $connect->close();
             </tr>
           </thead>
           <tbody>
-            <? $tbody ?>
+            <?= $tbody ?>
           </tbody>
         </table>
       </div>
