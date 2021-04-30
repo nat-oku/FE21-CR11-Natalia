@@ -17,7 +17,7 @@
           <a class="nav-link" href="profile.php">Your profile</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Our seniors</a>
+          <a class="nav-link" href="pets/seniors.php">Our seniors</a>
         </li>
         <li class="nav-item">
           <a class="btn nav-link" href="register.php">Register</a>
