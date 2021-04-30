@@ -87,6 +87,7 @@ $connect->close();
         <img class="userImage" src="pictures/avatar.png" alt="Adm avatar">
         <p class="">Administrator</p>
         <a  href="logout.php?logout">Sign Out </a>
+        <a href="pets/index.php">See all pets</a>
       </div>
       <div class="col-8 mt-2">
         <h2>Users</h2>
