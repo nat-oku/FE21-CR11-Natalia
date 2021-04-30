@@ -23,7 +23,7 @@
           <a class="btn nav-link" href="login.php">Login</a>
         </li>
         <li class="nav-item">
-          <a class="btn nav-link" href="logout.php">Logout</a>
+          <a class="btn nav-link" href="logout.php?logout">Logout</a>
         </li>
       </ul>
     </div>
