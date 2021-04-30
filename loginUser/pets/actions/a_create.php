@@ -71,7 +71,10 @@
        <div class="alert alert-<?=$class;?>"  role="alert">
            <p><?php echo ($message) ?? ''; ?></p>
             <p><?php echo ($uploadError) ?? ''; ?></p>
-            <a href='../index.php' ><button class="btn btn-primary"  type='button'> Home</button></a>
+            <a href='../create.php'><button class="btn btn-primary" type='button'>Add another pet</button></a>
+
+            <a href='../index.php'><button class="btn btn-primary" type='button'> Home</button></a>
+
        </div>
    </div>
 </body>
