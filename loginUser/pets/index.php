@@ -92,7 +92,7 @@
     <div class='mb-3'>
       <a href="create.php"><button class='btn btn-primary' type="button">Add new pet</button></a>
     </div>
-    <p class='h2'>All pets</p>
+    <h2>All pets</h2>
     <table class='table table-striped'>
         <thead class='table-success'>
             <tr>
