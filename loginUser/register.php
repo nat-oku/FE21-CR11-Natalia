@@ -163,7 +163,6 @@
       <input type="password" name="pass" class="form-control" placeholder="Enter Password" maxlength="15"/>
       <span class="text-danger"> <?php echo $passError; ?></span>
       <button type="submit" class="btn btn-block btn-primary" name="btn-signup">Click to register</button>
-      <a href="login.php" class="btn">Log in Here</a>
     </form>
   </div>
   
