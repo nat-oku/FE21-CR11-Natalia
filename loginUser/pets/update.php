@@ -37,3 +37,86 @@
   }
 
 ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS & fonts -->
+  <?php require_once '../components/boot_fonts.php' ?>
+  <link rel="stylesheet" href="../css/style.css">
+  <style type="text/css">
+             fieldset {
+               margin: auto;
+               margin-top: 100px;
+               width: 60% ;
+           }  
+           .img-thumbnail{
+               width: 70px !important;
+                height: 70px !important;
+           }    
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <!-- navbar -->
+    <?php require_once '../partials/navbar.php' ?>
+  </header>
+  <div class="container">
+    <h2>Update request</h2>
+    <img class='img-thumbnail rounded-circle' src='../pictures/pets/<?php echo $picture ?>' alt="<?php echo $breed ?>">
+    
+    <form action="actions/a_update.php" method="post" enctype="multipart/form-data">
+      <table class="table">
+        <tr>
+          <th>Breed</th>
+          <td><input class ="form-control" type="text" name="breed" placeholder="Breed" value="<?php echo $breed ?>" /></td>
+        </tr>
+        <tr>
+          <th>Pet name</th>
+          <td><input class ="form-control" type="text" name="pet_name" placeholder="Pet Name" value="<?php echo $pet_name ?>" /></td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td><input class ="form-control" type="text" name="pet_descr" placeholder="Description of the pet" value="<?php echo $pet_descr ?>" /></td>
+        </tr>
+        <tr>
+          <th>Date of birth</th>
+          <td><input class ="form-control  w-50" type="date" name="pet_date_of_birth" placeholder="Date of birth" value="<?php echo $pet_date_of_birth ?>" /></td>
+        </tr>
+        <tr>
+          <th>Hobbies</th>
+          <td><input class ="form-control" type="text" name="hobbies" placeholder="Hobbies" value="<?php echo $hobbies ?>" /></td>
+        </tr>
+        <tr>
+          <th>Picture</th>
+          <td><input class ="form-control" type="file" name="picture"/></td>
+        </tr>
+        <tr>
+          <th>Size</th>
+          <td><input class ="form-control" type="text" name="pet_size" placeholder="small/large" value="<?php echo $pet_size ?>" /></td>
+        </tr>
+        <tr>
+          <th>Size</th>
+          <td><input class ="form-control" type="text" name="location" placeholder="Address of pet's current animal sanctuary" value="<?php echo $location ?>" /></td>
+        </tr>
+        <tr>
+        <input type="hidden" name="petID" value= "<?php echo $data['petID'] ?>" />
+        <input type="hidden" name= "picture" value= "<?php echo $data['picture'] ?>" />
+        <td>
+          <button class ="btn btn-success" type="submit">Save Changes</button>
+        </td>
+        <td>
+          <a href="index.php"><button class="btn btn-warning" type ="button">Back</button></a>
+        </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  
+</body>
+</html>
