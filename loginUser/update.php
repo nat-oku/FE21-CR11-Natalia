@@ -49,9 +49,10 @@
     $uploadError = '';    
     $pictureArray = file_upload($_FILES['picture']); //file_upload() called
     $picture = $pictureArray->fileName;
+
     if ($pictureArray->error === 0) {      
-        ($_POST[ "picture"] == "avatar.png") ?: unlink("pictures/{$_POST["picture "]}");
-        $sql = "UPDATE user SET first_name = '$f_name', last_name = '$l_name', email = '$email', date_of_birth = '$date_of_birth', picture = '$pictureArray->fileName' WHERE userID = {$userID}";
+        ($_POST["picture"] == "avatar.png") ?: unlink("pictures/{$_POST["picture"]}");
+        $sql = "UPDATE user SET first_name = '$f_name', last_name = '$l_name', email = '$email', date_of_birth = '$date_of_birth', picture='$pictureArray->fileName' WHERE userID = {$userID}";
     } else {
         $sql = "UPDATE user SET first_name = '$f_name', last_name = '$l_name', email = '$email', date_of_birth = '$date_of_birth' WHERE userID = {$userID}";
     }
@@ -59,12 +60,12 @@
         $class = "alert alert-success";
         $message = "The record was successfully updated";
         $uploadError = ($pictureArray->error != 0) ? $pictureArray->ErrorMessage : '';
-        header("refresh:3;url=update.php?id={$id}");
+        header("refresh:3;url=update.php?userID={$userID}");
     } else {
         $class = "alert alert-danger";
         $message = "Error while updating record : <br>" . $connect->error;
         $uploadError = ($pictureArray->error != 0) ? $pictureArray->ErrorMessage : '';
-        header("refresh:3;url=update.php?id={$id}");
+        header("refresh:3;url=update.php?userID={$userID}");
     }
   }
 
@@ -138,7 +139,7 @@
          <tr>
            <th>Picture</th>
            <td>
-            <input class="form-control" type="file" name="picture"/>
+            <input class="form-control" type="file" name="picture" value="<?php echo $picture ?>"/>
            </td>
          </tr>
          <tr>
