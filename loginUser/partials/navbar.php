@@ -20,7 +20,7 @@
           <a class="btn nav-link" href="register.php">Register</a>
         </li>
         <li class="nav-item">
-          <a class="btn nav-link" href="#">Login</a>
+          <a class="btn nav-link" href="login.php">Login</a>
         </li>
       </ul>
     </div>
