@@ -1,0 +1,15 @@
+body {
+  background-color: chocolate;
+}
+
+.heroImg {
+  max-height: 100vh;
+  /*  or 100% of container */
+  /* or 100% of container */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* none can be an option too as cover may deform it*/
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+/*# sourceMappingURL=style.css.map */
