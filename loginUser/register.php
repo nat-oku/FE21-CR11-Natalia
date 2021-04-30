@@ -1,5 +1,7 @@
 <?php
   //start new session or continue the previous one
+  session_start();
+
   if(isset($_SESSION['user']) != "") {
     header("Location: home.php" ); // redirects to home.php
   }
@@ -160,8 +162,8 @@
       </div>
       <input type="password" name="pass" class="form-control" placeholder="Enter Password" maxlength="15"/>
       <span class="text-danger"> <?php echo $passError; ?></span>
-      <button type="submit" class="btn btn-block btn-primary" name="btn-signup">Sign Up</button>
-      <a href="index.php" class="btn">Sign in Here</a>
+      <button type="submit" class="btn btn-block btn-primary" name="btn-signup">Click to register</button>
+      <a href="login.php" class="btn">Log in Here</a>
     </form>
   </div>
   
