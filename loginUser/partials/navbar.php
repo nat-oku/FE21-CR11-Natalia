@@ -17,7 +17,7 @@
           <a class="nav-link" href="#">Our seniors</a>
         </li>
         <li class="nav-item">
-          <a class="btn nav-link" href="#">Register</a>
+          <a class="btn nav-link" href="register.php">Register</a>
         </li>
         <li class="nav-item">
           <a class="btn nav-link" href="#">Login</a>
