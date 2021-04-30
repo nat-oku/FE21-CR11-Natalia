@@ -24,14 +24,16 @@
       $tbody .= "
         <tr>
           <td>
-            <img class='img-thumbnail' src='pictures/" .$rowPets['picture']."'
+            <img class='img-thumbnail' src='../pictures/" .$rowPets['picture']."'
           </td>
-          <td>
-            ".$rowPets['name']."
-          </td>
-          <td>
-          ".$rowPets['price']."
-          </td>
+          <td>".$rowPets['breed']."</td>
+          <td>".$rowPets['pet_name']."</td>
+          <td>".$rowPets['pet_descr']."</td>
+          <td>".$rowPets['pet_date_of_birth']."</td>
+          <td>".$rowPets['hobbies']."</td>
+          <td>".$rowPets['pet_size']."</td>
+          <td>".$rowPets['location']."</td>
+
           <td>
             <a href='update.php?id=".$rowPets['petID']."'><button class='btn btn-primary btn-sm' type='button'>Edit</button></a>
             <a href='delete.php?id=".$rowPets['petID']."'><button class='btn btn-danger btn-sm' type='button'>Delete</button></a>
@@ -88,24 +90,32 @@
     <!-- navbar -->
     <?php require_once '../partials/navbar.php' ?>
   </header>
-  <div class="manageProduct w-75 mt-3">   
-    <div class='mb-3'>
-      <a href="create.php"><button class='btn btn-primary' type="button">Add new pet</button></a>
+  <div class="container">
+    <div class="manageProduct mt-3">   
+      <div class='mb-3'>
+        <a href="create.php"><button class='btn btn-primary' type="button">Add new pet</button></a>
+      </div>
+      <h2>All pets</h2>
+      <table class='table table-striped'>
+          <thead class='table-success'>
+              <tr>
+                  <th>Picture</th>
+                  <th>Breed</th >
+                  <th>Pet's name</th>
+                  <th>Description</th>
+                  <th>Date of birth</th>
+                  <th>Hobbies</th>
+                  <th>Size</th>
+                  <th>Location</th>
+                  <th>Action</th>
+              </tr>
+          </thead>
+          <tbody>
+            <?= $tbody; ?>
+          </tbody>
+      </table>
     </div>
-    <h2>All pets</h2>
-    <table class='table table-striped'>
-        <thead class='table-success'>
-            <tr>
-                <th>Picture</th>
-                <th>Name</th >
-                <th>Price</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-          <?= $tbody; ?>
-        </tbody>
-    </table>
   </div>
+  
 </body>
 </html>
