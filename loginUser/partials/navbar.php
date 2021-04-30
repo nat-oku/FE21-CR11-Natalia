@@ -14,6 +14,9 @@
           <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="profile.php">Your profile</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#">Our seniors</a>
         </li>
         <li class="nav-item">
