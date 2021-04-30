@@ -17,6 +17,7 @@
 
   <!-- CSS & fonts -->
   <?php require_once 'components/boot_fonts.php' ?>
+  <link rel="stylesheet" href="css/style.css">
 
   <title>Vienna Pet Adoption || Home</title>
 
@@ -25,6 +26,7 @@
   <header>
     <!-- navbar -->
     <?php require_once 'partials/navbar.php' ?>
+    <?php require_once 'partials/hero.php' ?>
 
   </header>
   
