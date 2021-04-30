@@ -35,8 +35,8 @@
           <td>".$rowPets['location']."</td>
 
           <td>
-            <a href='update.php?id=".$rowPets['petID']."'><button class='btn btn-primary btn-sm' type='button'>Edit</button></a>
-            <a href='delete.php?id=".$rowPets['petID']."'><button class='btn btn-danger btn-sm' type='button'>Delete</button></a>
+            <a href='update.php?petID=".$rowPets['petID']."'><button class='btn btn-primary btn-sm' type='button'>Edit</button></a>
+            <a href='delete.php?petID=".$rowPets['petID']."'><button class='btn btn-danger btn-sm' type='button'>Delete</button></a>
           </td>
         </tr>
       ";}
