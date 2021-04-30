@@ -22,6 +22,11 @@
 
 </head>
 <body>
+  <header>
+    <!-- navbar -->
+    <?php require_once 'partials/navbar.php' ?>
+
+  </header>
   
 </body>
 </html>
