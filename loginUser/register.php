@@ -111,3 +111,59 @@
  $connect->close();
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS & fonts -->
+    <?php require_once 'components/boot_fonts.php' ?>
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>VPA || Register</title>
+</head>
+<body>
+  <header>
+    <!-- navbar -->
+    <?php require_once 'partials/navbar.php' ?>
+  </header>
+
+  <div class="container">
+    <h2>Sign Up.</h2>
+    <form class="w-75"  method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off"  enctype="multipart/form-data">
+      <?php
+      if (isset($errMSG)) {
+        ?>
+        <div class="alert alert-<?php echo $errTyp ?>">
+          <p><?php echo $errMSG; ?></p>
+          <p><?php echo $uploadError; ?></p>
+        </div>
+        <?php
+          }
+        ?>
+      <input type="text" name="fname" class="form-control" placeholder="First name" maxlength="50" value="<?php echo $fname ?>"   />
+      <span class="text-danger" > <?php echo $fnameError; ?></span>
+
+      <input type="text" name="lname" class="form-control" placeholder="Last name" maxlength="50" value="<?php echo $lname ?>"/>
+      <span class="text-danger"> <?php echo  $fnameError; ?></span>
+
+      <input type="email" name="email" class="form-control" placeholder ="Enter Your Email" maxlength="40" value="<?php echo $email ?>"/>
+      <span  class="text-danger" > <?php  echo $emailError; ?></span>
+      
+      <div class="d-flex">
+        <input class='form-control w-50' type="date" name="date_of_birth"  value="<?php echo $date_of_birth ?>"/>
+        <span class="text-danger"> <?php  echo $dateError; ?></span>
+        <input class='form-control w-50' type="file" name= "picture">
+        <span class="text-danger"> <?php   echo  $picError; ?></span>
+      </div>
+      <input type="password" name="pass" class="form-control" placeholder="Enter Password" maxlength="15"/>
+      <span class="text-danger"> <?php echo $passError; ?></span>
+      <button type="submit" class="btn btn-block btn-primary" name="btn-signup">Sign Up</button>
+      <a href="index.php" class="btn">Sign in Here</a>
+    </form>
+  </div>
+  
+</body>
+</html>
