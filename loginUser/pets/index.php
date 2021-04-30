@@ -24,7 +24,7 @@
       $tbody .= "
         <tr>
           <td>
-            <img class='img-thumbnail' src='../pictures/" .$rowPets['picture']."'
+            <img class='img-thumbnail' src='../pictures/pets/" .$rowPets['picture']."'
           </td>
           <td>".$rowPets['breed']."</td>
           <td>".$rowPets['pet_name']."</td>
