@@ -98,7 +98,7 @@
           <tr>
            <th>Location</th>
            <td>
-             <input class='form-control' type="text" name="Location" placeholder="Address of pet's current animal sanctuary">
+             <input class='form-control' type="text" name="location" placeholder="Address of pet's current animal sanctuary">
            </td>
           </tr>
           <tr>
