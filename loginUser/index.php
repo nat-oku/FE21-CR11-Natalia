@@ -31,9 +31,14 @@
     <?php require_once 'partials/hero.php' ?>
 
   </header>
-  <div class="container d-flex flex-column">
-    <a class="btn" href="login.php">Log in</a>
-    <a class="btn" href="register.php">Register</a>
+
+  <div class="container mt-4 mb-4">
+    
+    <h2 class="text-center">Welcome to Vienna Pet Adoption<h2>
+    <h5 class="text-center fw-light">We are a NGO which rescues animals from bad places and gives them a new home full of love.</h5>
+    <h5 class="text-center fw-light"><i class="fas fa-paw"></i>
+    <i class="far fa-heart text-orange"></i> Because everyone deserves love <i class="fas fa-paw"></i>
+    <i class="far fa-heart text-orange"></i></h5>
 
   </div>
   
