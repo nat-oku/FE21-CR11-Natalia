@@ -20,9 +20,7 @@
     </div>
     ';
   }
-
-  session_start();
-
+  
   if (isset($_SESSION['user']) != "" ) {
     $navUser = '
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -45,7 +43,7 @@
     ';
   }
 
-  if (isset($_SESSION['user']) != "" ) {
+  if (isset($_SESSION['adm']) != "" ) {
     $navAdm = '
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
@@ -53,7 +51,7 @@
           <a class="nav-link" href="home.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="dashboard.php">Your profile</a>
+          <a class="nav-link" href="dashboard.php">Dashboard</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="pets/seniors.php">Our seniors</a>
