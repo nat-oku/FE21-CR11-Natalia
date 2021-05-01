@@ -86,7 +86,7 @@
     <!-- navbar -->
     <?php require_once 'partials/navbar.php' ?>
   </header>
-  <div class="container">
+  <div class="container mt-4 mb-4">
     <h2>Log in.</h2>
     <form class="w-75"  method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
       <?php
@@ -94,12 +94,11 @@
           echo $errMSG;
         }
       ?>
-      <input type="email" autocomplete="off" name= "email" class="form-control" placeholder="Your Email" value="<?php echo $email; ?>" maxlength ="40" />
+      <input type="email" autocomplete="off" name= "email" class="form-control mt-1 mb-1" placeholder="Your Email" value="<?php echo $email; ?>" maxlength ="40" />
       <span class="text-danger"><?php echo $emailError; ?></span>
-      <input type="password" name="pass" class="form-control"  placeholder="Your Password" maxlength="15"/>
+      <input type="password" name="pass" class="form-control mt-1 mb-1"  placeholder="Your Password" maxlength="15"/>
       <span class="text-danger"><?php echo $passError; ?></span>
-      <button class="btn btn-block btn-primary" type="submit" name ="btn-login">Click to log In</button>
-      <a class="btn" href="register.php">Click to register</a>
+      <button class="btn bg-green text-light mt-1 mb-1" type="submit" name ="btn-login">Click to log In</button>
 
     </form>
   </div>
