@@ -36,11 +36,17 @@
               <p class="card-text">Date of birth: '.$row['pet_date_of_birth'].'</p>
               <p class="card-text">Type: a '.$row['pet_size'].' '.$row['breed']. '</p>
               <p class="card-text">Address of shelter: '.$row['location']. '</p>
+              <form action="home.php" method="post">
+                <input type="hidden" name="petID" class="form-control" value="'.$row['petID'].'"/>
+                <button class="btn" name="submitb" type="submit">Take me home</a></button>
+              </form>
             </div>
           </div>
         </div>
       ';
-    }
+    };
+  } else {
+    $colbody = '<div class="col">No data available</div>'
   }
 
 ?>
