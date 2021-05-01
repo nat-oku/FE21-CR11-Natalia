@@ -44,10 +44,11 @@
           </div>
         </div>
       ';
-    };
+    }
   } else {
-    $colbody = '<div class="col">No data available</div>'
-  }
+    $colbody = '<div class="col">No Data Available</div>';
+  } 
+
 
 ?>
 
