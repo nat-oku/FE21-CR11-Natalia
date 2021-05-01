@@ -35,8 +35,8 @@
           <td>".$rowPets['location']."</td>
 
           <td>
-            <a href='update.php?petID=".$rowPets['petID']."'><button class='btn btn-primary btn-sm' type='button'>Edit</button></a>
-            <a href='delete.php?petID=".$rowPets['petID']."'><button class='btn btn-danger btn-sm' type='button'>Delete</button></a>
+            <a href='update.php?petID=".$rowPets['petID']."'><button class='btn bg-green text-light btn-sm w-100 mb-1' type='button'>Edit</button></a>
+            <a href='delete.php?petID=".$rowPets['petID']."'><button class='btn bg-orange text-light btn-sm w-100 mt-1' type='button'>Delete</button></a>
           </td>
         </tr>
       ";}
@@ -69,8 +69,8 @@
            margin: auto;
        }
        .img-thumbnail{
-           width: 70px !important;
-            height: 70px !important;
+          width: 400px !important;
+          height: auto !important;
        }
        td 
        {          
@@ -91,13 +91,14 @@
     <?php require_once '../partials/navbar.php' ?>
   </header>
   <div class="container">
+    <h2>All pets</h2>
     <div class="manageProduct mt-3">   
       <div class='mb-3'>
-        <a href="create.php"><button class='btn btn-primary' type="button">Add new pet</button></a>
+        <a href="create.php"><button class='btn bg-green text-light' type="button">Add new pet</button></a>
+        <a href="../dashboard.php"><button class='btn bg-orange text-light' type="button">Back to dashboard</button></a>
       </div>
-      <h2>All pets</h2>
       <table class='table table-striped'>
-          <thead class='table-success'>
+          <thead class='bg-green text-light'>
               <tr>
                   <th>Picture</th>
                   <th>Breed</th >
