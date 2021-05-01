@@ -28,10 +28,10 @@ if ($result->num_rows > 0) {
            <td>" . $row['first_name'] . " " . $row['last_name'] . "</td>
            <td>" . $row['date_of_birth'] . "</td>
            <td>" . $row['email'] . "</td>
-           <td class=''>
-            <a href='update.php?userID=" . $row['userID'] . "'><button class='btn text-gold btn-sm w-100 mb-1' type='button'>Edit</button></a>
-            <a href='delete.php?userID=" . $row['userID'] . "'><button class='btn btn-danger btn-sm w-100 mt-1' type='button'>Delete</button></a>
-            <a href='delete.php?userID=" . $row['userID'] . "'><button class='btn btn-danger btn-sm w-100 mt-1' type='button'>See adoptions</button></a>
+           <td class='d-flex flex-column'>
+            <a href='update.php?userID=" . $row['userID'] . "'><button class='btn bg-green text-light btn-sm w-100 mb-1' type='button'>Edit</button></a>
+            <a href='delete.php?userID=" . $row['userID'] . "'><button class='btn bg-orange text-light btn-sm w-100 mt-1' type='button'>Delete</button></a>
+            <a href='delete.php?userID=" . $row['userID'] . "'><button class='btn bg-gold text-light btn-sm w-100 mt-1' type='button'>User's adoptions</button></a>
 
            </td>
         </tr>";
@@ -89,13 +89,13 @@ $connect->close();
       <div class="col-2 d-flex flex-column align-items-center">
         <img class="userImage" src="pictures/avatar.png" alt="Adm avatar">
         <p class="">Administrator</p>
-        <a href="logout.php?logout" class="btn w-100 mb-1">Sign Out </a>
-        <a href="pets/index.php" class="btn w-100 mt-1">See all pets</a>
+        <a href="logout.php?logout" class="btn bg-orange text-light w-100 mb-1">Sign Out </a>
+        <a href="pets/index.php" class="btn bg-green text-light w-100 mt-1">See all pets</a>
       </div>
       <div class="col-10 mt-2">
         <h2>Users</h2>
-        <table class="table table-stripped">
-          <thead class="table-success">
+        <table class="table">
+          <thead class="bg-green text-light">
             <tr>
               <th>Picture</th>
               <th>Name</th>
