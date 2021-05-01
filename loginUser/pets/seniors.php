@@ -21,7 +21,7 @@
   if(isset($_SESSION["adm"])){
    $backBtn = "../dashboard.php";    
   }
-  $sql = "SELECT * FROM pets where pet_date_of_birth <= '2014-01-31'";
+  $sql = "SELECT * FROM pets where pet_date_of_birth <= '2013-12-31'";
   $colbody = '';
   $result = mysqli_query($connect, $sql);
   if(mysqli_num_rows($result) > 0) {
