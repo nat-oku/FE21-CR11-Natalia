@@ -62,6 +62,9 @@
     <meta charset= "UTF-8" >
    <title>Update</title>
    <?php require_once '../../components/boot_fonts.php' ?>
+   <style>
+      <?php include '../../css/style.css'; #adding css to file ?>
+   </style>
 </head>
 <body>
    <div class="container">

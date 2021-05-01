@@ -64,7 +64,6 @@
 
    <!-- CSS & fonts -->
   <?php require_once '../components/boot_fonts.php' ?>
-  <link rel="stylesheet" href="../css/style.css">
   <style type= "text/css">
        .manageProduct {          
            margin: auto;
@@ -82,6 +81,7 @@
        {
            text-align: center;
        }
+      <?php include '../css/style.css'; #adding css to file ?>
    </style>
    
   <title>VPA || Pets List</title> </head></head>
