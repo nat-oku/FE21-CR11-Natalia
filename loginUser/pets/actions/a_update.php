@@ -66,8 +66,8 @@
     <div class="alert alert-<?php echo $class;?>" role="alert">
       <p><?php echo ($message) ?? ''; ?></p>
       <p><?php echo ($uploadError) ?? ''; ?></p>
-      <a href='../update.php?petID=<?=$petID;?>' ><button class="btn btn-warning" type='button'>Back</button></a>
-      <a href='../index.php'><button class="btn btn-success"  type='button'>Home</button></a>
+      <a href='../update.php?petID=<?=$petID;?>' ><button class="btn bg-orange text-light" type='button'>Back to edit pet</button></a>
+      <a href='../index.php'><button class="btn bg-green text-light" type='button'>Back to pets list</button></a>
     </div>
   </div>
 
