@@ -1,3 +1,114 @@
+/* adding global styles for all elements */
+
+  /* varibales */
+  $brand-color-1: #006665;
+  $brand-color-1-opacity-02: rgba(0, 102, 101, 0.2);
+  $brand-color-1-opacity-03: rgba(0, 102, 101, 0.8);
+  $brand-color-2: #d4af37;
+  $brand-color-2-opacity-02: rgba(212, 175, 55, 0.9);
+  $brand-color-3: rgb(224, 240, 240);
+  $brand-color-4: #ff8474;
+  $brand-color-5: #e4ebeb;
+  
+  
+    /* text transformation */
+  .textShadow {
+    text-shadow: 2px 2px 5px #333;
+  }
+  
+  .textShadowIcons {
+    text-shadow: 1px 1px 3px $brand-color-1-opacity-02;
+  }
+  
+  .fontSmall-13 {
+    font-size: 14px;
+  }
+  
+  .iconSize-60 {
+    font-size: 60px;
+  }
+  
+  
+  /* stylings for cards */
+  .removeBorder {
+    border: none;
+    border-radius: none;
+  }
+  
+  .bgOpacity {
+    background-color: $brand-color-1-opacity-03;
+  }
+  
+  /* styles for changing colors */
+  
+    /* changing color of border */
+  .border-grey {
+    border: 1.5px solid $brand-color-1;
+  }
+  
+  .border-gold {
+    border: 1.5px solid $brand-color-2;
+    background-color:  $brand-color-3;
+    color: $brand-color-1;
+    
+    &:hover {
+      background-color: $brand-color-2;
+      color: $brand-color-3;
+    }
+  }
+  
+  .border-newWhite {
+    border: 1.5px solid $brand-color-3;
+    background-color:  $brand-color-2;
+    color: $brand-color-3;
+    
+    &:hover {
+      border: 1.5px solid $brand-color-2;
+      background-color: $brand-color-3;
+      color: $brand-color-2;
+    }
+  }
+  
+    /* changing color of text*/
+  .text-grey {
+    color: $brand-color-1;
+  }
+  
+  .text-gold {
+    color: $brand-color-2;
+  }
+  
+  .text-white {
+    color: $brand-color-3;
+  }
+  
+    /* changing color of bachground */
+  .bg-grey {
+    background-color: $brand-color-1;
+  }
+  
+  .bg-gold {
+    background-color: $brand-color-2;
+  }
+  .bg-gold-opacity-2 {
+    background-color: $brand-color-2-opacity-02;
+  }
+  
+  .bg-white {
+    background-color: $brand-color-3;
+  }
+  
+  
+  /* pointer style */
+  .pointerMouse {
+    cursor: pointer;
+  }
+  
+  /* centering the content */
+  .marginAuto {
+    margin: 0 auto;
+  }
+
 .heroImg {
   max-height: 100vh;
   /*  or 100% of container */

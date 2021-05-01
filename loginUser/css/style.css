@@ -1,3 +1,101 @@
+/* adding global styles for all elements */
+/* varibales */
+/* text transformation */
+.textShadow {
+  text-shadow: 2px 2px 5px #333;
+}
+
+.textShadowIcons {
+  text-shadow: 1px 1px 3px rgba(0, 102, 101, 0.2);
+}
+
+.fontSmall-13 {
+  font-size: 14px;
+}
+
+.iconSize-60 {
+  font-size: 60px;
+}
+
+/* stylings for cards */
+.removeBorder {
+  border: none;
+  border-radius: none;
+}
+
+.bgOpacity {
+  background-color: rgba(0, 102, 101, 0.8);
+}
+
+/* styles for changing colors */
+/* changing color of border */
+.border-grey {
+  border: 1.5px solid #006665;
+}
+
+.border-gold {
+  border: 1.5px solid #d4af37;
+  background-color: #e0f0f0;
+  color: #006665;
+}
+
+.border-gold:hover {
+  background-color: #d4af37;
+  color: #e0f0f0;
+}
+
+.border-newWhite {
+  border: 1.5px solid #e0f0f0;
+  background-color: #d4af37;
+  color: #e0f0f0;
+}
+
+.border-newWhite:hover {
+  border: 1.5px solid #d4af37;
+  background-color: #e0f0f0;
+  color: #d4af37;
+}
+
+/* changing color of text*/
+.text-grey {
+  color: #006665;
+}
+
+.text-gold {
+  color: #d4af37;
+}
+
+.text-white {
+  color: #e0f0f0;
+}
+
+/* changing color of bachground */
+.bg-grey {
+  background-color: #006665;
+}
+
+.bg-gold {
+  background-color: #d4af37;
+}
+
+.bg-gold-opacity-2 {
+  background-color: rgba(212, 175, 55, 0.9);
+}
+
+.bg-white {
+  background-color: #e0f0f0;
+}
+
+/* pointer style */
+.pointerMouse {
+  cursor: pointer;
+}
+
+/* centering the content */
+.marginAuto {
+  margin: 0 auto;
+}
+
 .heroImg {
   max-height: 100vh;
   /*  or 100% of container */
