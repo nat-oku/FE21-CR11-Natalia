@@ -134,7 +134,7 @@
     <?php require_once 'partials/navbar.php' ?>
   </header>
 
-  <div class="container">
+  <div class="container  mt-4 mb-4">
     <h2>Sign Up.</h2>
     <form class="w-75"  method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off"  enctype="multipart/form-data">
       <?php
@@ -147,24 +147,24 @@
         <?php
           }
         ?>
-      <input type="text" name="fname" class="form-control" placeholder="First name" maxlength="50" value="<?php echo $fname ?>"   />
+      <input type="text" name="fname" class="form-control mt-1 mb-1" placeholder="First name" maxlength="50" value="<?php echo $fname ?>"   />
       <span class="text-danger" > <?php echo $fnameError; ?></span>
 
-      <input type="text" name="lname" class="form-control" placeholder="Last name" maxlength="50" value="<?php echo $lname ?>"/>
+      <input type="text" name="lname" class="form-control mt-1 mb-1" placeholder="Last name" maxlength="50" value="<?php echo $lname ?>"/>
       <span class="text-danger"> <?php echo  $fnameError; ?></span>
 
-      <input type="email" name="email" class="form-control" placeholder ="Enter Your Email" maxlength="40" value="<?php echo $email ?>"/>
+      <input type="email" name="email" class="form-control mt-1 mb-1" placeholder ="Enter Your Email" maxlength="40" value="<?php echo $email ?>"/>
       <span  class="text-danger" > <?php  echo $emailError; ?></span>
       
-      <div class="d-flex">
-        <input class='form-control w-50' type="date" name="date_of_birth"  value="<?php echo $date_of_birth ?>"/>
+      <div class="d-flex mt-1 mb-1">
+        <input class='form-control w-50 me-1' type="date" name="date_of_birth"  value="<?php echo $date_of_birth ?>"/>
         <span class="text-danger"> <?php  echo $dateError; ?></span>
-        <input class='form-control w-50' type="file" name= "picture">
+        <input class='form-control w-50 ms-1' type="file" name= "picture">
         <span class="text-danger"> <?php   echo  $picError; ?></span>
       </div>
-      <input type="password" name="pass" class="form-control" placeholder="Enter Password" maxlength="15"/>
+      <input type="password" name="pass" class="form-control  mt-1 mb-1" placeholder="Enter Password" maxlength="15"/>
       <span class="text-danger"> <?php echo $passError; ?></span>
-      <button type="submit" class="btn btn-block btn-primary" name="btn-signup">Click to register</button>
+      <button type="submit" class="btn bg-green text-light mt-1 mb-1" name="btn-signup">Click to register</button>
     </form>
   </div>
   
