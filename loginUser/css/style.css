@@ -44,6 +44,17 @@
   color: #FFFFFF;
 }
 
+.border-green {
+  border: 1.5px solid #FFFFFF;
+  background-color: #006665;
+  color: #FFFFFF;
+}
+
+.border-green:hover {
+  background-color: #FFFFFF;
+  color: #006665;
+}
+
 .border-newWhite {
   border: 1.5px solid #e0f0f0;
   background-color: #d4af37;
@@ -112,14 +123,13 @@
   margin: 0 auto;
 }
 
-.heroImg {
-  max-height: 100vh;
+.myImage {
+  max-height: 90vh;
   /*  or 100% of container */
+  width: 100%;
   /* or 100% of container */
   -o-object-fit: cover;
      object-fit: cover;
   /* none can be an option too as cover may deform it*/
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
 }
 /*# sourceMappingURL=style.css.map */
