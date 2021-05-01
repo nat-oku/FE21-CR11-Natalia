@@ -41,6 +41,7 @@
   <!-- CSS & fonts -->
   <?php require_once '../../components/boot_fonts.php' ?>
   <style>
+    
     <?php include '../../css/style.css'; #adding css to file ?>
   </style>
    <title>VPA || Delete response</title>
@@ -52,7 +53,7 @@
        </div>
        <div class="alert alert-<?=$class;?>"  role="alert">
            <p><?=$message;?></p >
-           <a  href='../index.php'><button  class="btn btn-success" type= 'button'>Home</button></a>
+           <a  href='../index.php'><button class="btn bg-green text-white" type='button'>Back to pets list</button></a>
        </div >
    </div>
 </body>

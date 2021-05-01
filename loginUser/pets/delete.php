@@ -51,8 +51,8 @@
            width: 70% ;
        }    
        .img-thumbnail{
-           width: 70px !important;
-           height: 70px !important;
+          width: 300px !important;
+          height: 300px !important;
        }
     <?php include '../css/style.css'; #adding css to file ?>
   </style>
@@ -65,35 +65,40 @@
   </header>
   <div class="container">
     <h2>Delete request</h2>
-    <img class='img-thumbnail rounded-circle' src='../pictures/pets/<?php echo $picture ?>' alt="<?php echo $breed ?>">
     <h5> You have selected the data below: </h5>
-    <table class="table w-75 mt-3">
-      <thead class="table-success">
-        <tr>
-          <th>Pet Id</th>
-          <th>Pet breed</th>
-          <th>Pet name</th>
-          <th>Pet's date of birth</th>
-          <th>Location</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><?php echo $petID?></td>
-          <td><?php echo $breed?></td>
-          <td><?php echo $pet_name?></td>
-          <td><?php echo $pet_date_of_birth?></td>
-          <td><?php echo $location?></td>
-        </tr>
-      </tbody>
-    </table>
-    <h3 class="mb-4">Do you really want to delete this pet from your database?</h3>
-    <form action="actions/a_delete.php" method="post">
-      <input type="hidden" name="petID" value="<?php echo $petID ?>" />
-      <input type="hidden" name="picture" value="<?php echo $picture ?>" />
-      <button class="btn btn-danger" type="submit">Yes, delete it</button>
-      <a href="index.php"><button class="btn btn-warning"  type="button">No, go back</button></a>
-    </form>
+    <div class="d-flex flex-row">
+      <img class='img-thumbnail  m-4' src='../pictures/pets/<?php echo $picture ?>' alt="<?php echo $breed ?>">
+      <div>
+        <table class="table w-75 mt-3">
+          <thead class="bg-green text-light">
+            <tr>
+              <th>Pet Id</th>
+              <th>Pet breed</th>
+              <th>Pet name</th>
+              <th>Pet's date of birth</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><?php echo $petID?></td>
+              <td><?php echo $breed?></td>
+              <td><?php echo $pet_name?></td>
+              <td><?php echo $pet_date_of_birth?></td>
+              <td><?php echo $location?></td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="mb-4">Do you really want to delete this pet from your database?</h3>
+        <form action="actions/a_delete.php" method="post">
+          <input type="hidden" name="petID" value="<?php echo $petID ?>" />
+          <input type="hidden" name="picture" value="<?php echo $picture ?>" />
+          <button class="btn bg-orange text-light" type="submit">Yes, delete it</button>
+            <a href="index.php"><button class="btn bg-green text-light"  type="button">No, go back</button></a>
+        </form>
+      </div>
+    </div>
+
   </div>
   
 </body>
