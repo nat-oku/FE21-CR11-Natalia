@@ -27,21 +27,42 @@
   if(mysqli_num_rows($result) > 0) {
     while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
       $colbody .='
-        <div class="col">
-          <div class="card">
+      <div class="col fw-light">
+        <div class="card-group h-100">
             <img src="../pictures/pets/'.$row['picture'].'" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Meet '.$row['pet_name'].'</h5>
+              <h5 class="card-title text-green">Meet '.$row['pet_name'].'</h5>
               <p class="card-text">'.$row['pet_descr'].'</p>
               <p class="card-text">Date of birth: '.$row['pet_date_of_birth'].'</p>
               <p class="card-text">Type: a '.$row['pet_size'].' '.$row['breed']. '</p>
               <p class="card-text">Address of shelter: '.$row['location']. '</p>
+              <form action="seniors.php" method="post">
+              <input type="hidden" name="petID" class="form-control" value="'.$row['petID'].'"/>
+              <button class="btn border-gold" name="submitb" type="submit">Take me home</a></button>
+            </form>
             </div>
           </div>
         </div>
       ';
     }
+  } else {
+    $colbody = '<div class="col">No Data Available</div>';
   }
+
+  if(isset($_POST['submitb'])) {
+    $petID = $_POST['petID'];
+    $userID = $_SESSION['user'];
+    $sql = "INSERT INTO pet_adoption (fk_petID, fk_userID) VALUES ('$petID', '$userID')";
+    if($connect->query($sql) === true){
+      $msg = 'Congrats, you adopted a pet!';
+      echo "<script type='text/javascript'>alert('$msg');</script>";
+    } else {
+      $msg = 'Something went wrong, try again later';
+      echo "<script type='text/javascript'>alert('$msg');</script>";
+    }
+  }
+
+  $connect->close();
 
 ?>
 
@@ -72,6 +93,13 @@
 
   <main>
     <div class="container">
+    <div class="mb-3 text-center">
+        <h2>Our seniors <i class="far fa-heart text-orange"></i></h2>
+        <h4 class="fw-light">Here you can find the senior animals who are older than 8 years and didn't find a home yet. <br> Will YOU adopt him?<h4>
+        <h6 class="fw-light">With a click on the button "Take me home", you agree to adopt the selected pet.</h6>
+      </div>
+      <a href="<?php echo $backBtn?>" ><button class="btn bg-green text-light mt-1 mb-3" type="button">Back to your profile</button></a>
+      <a href="../home.php" ><button class="btn bg-gold text-light mt-1 mb-3" type="button">See all pets</button></a>
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <?= $colbody ;?>
       </div>
