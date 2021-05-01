@@ -122,7 +122,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS & fonts -->
     <?php require_once 'components/boot_fonts.php' ?>
-  <link rel="stylesheet" href="css/style.css">
+    <style>
+      <?php include 'css/style.css'; #adding css to file ?>
+    </style>
 
   <title>VPA || Register</title>
 </head>

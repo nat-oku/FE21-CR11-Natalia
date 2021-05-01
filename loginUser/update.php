@@ -81,7 +81,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS & fonts -->
   <?php require_once 'components/boot_fonts.php' ?>
-  <link rel="stylesheet" href="css/style.css">
+
   <style type= "text/css">
       fieldset {
            margin: auto;
@@ -92,6 +92,9 @@
            width: 70px !important;
            height: 70px !important;
        }
+    
+       <?php include 'css/style.css'; #adding css to file ?>
+
   </style>
 
   <title>VPA || Update profile</title>

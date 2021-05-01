@@ -38,6 +38,8 @@ height: 200px;
    background: rgb(2,0,36);
     background: linear-gradient(24deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);  
 }
+<?php include 'css/style.css'; #adding css to file ?>
+
 </style>
 </head>
 <body>

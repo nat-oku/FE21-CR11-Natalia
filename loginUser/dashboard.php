@@ -29,8 +29,10 @@ if ($result->num_rows > 0) {
            <td>" . $row['date_of_birth'] . "</td>
            <td>" . $row['email'] . "</td>
            <td class=''>
-            <a href='update.php?userID=" . $row['userID'] . "'><button class='btn btn-primary btn-sm w-100 mb-1' type='button'>Edit</button></a>
+            <a href='update.php?userID=" . $row['userID'] . "'><button class='btn text-gold btn-sm w-100 mb-1' type='button'>Edit</button></a>
             <a href='delete.php?userID=" . $row['userID'] . "'><button class='btn btn-danger btn-sm w-100 mt-1' type='button'>Delete</button></a>
+            <a href='delete.php?userID=" . $row['userID'] . "'><button class='btn btn-danger btn-sm w-100 mt-1' type='button'>See adoptions</button></a>
+
            </td>
         </tr>";
    }
@@ -52,7 +54,7 @@ $connect->close();
 
   <!-- CSS & fonts -->
   <?php require_once 'components/boot_fonts.php' ?>
-  <link rel="stylesheet" href="css/style.css">
+  
   <style type="text/css" >       
        .img-thumbnail{
            width: 70px !important;
@@ -71,6 +73,7 @@ $connect->close();
           width: 100px ;
           height: auto;
       }
+      <?php include 'css/style.css'; #adding css to file ?>
    </style>
 
   <title>Vienna Pet Adoption || Dashboard</title>
@@ -89,7 +92,7 @@ $connect->close();
         <a href="logout.php?logout" class="btn w-100 mb-1">Sign Out </a>
         <a href="pets/index.php" class="btn w-100 mt-1">See all pets</a>
       </div>
-      <div class="col-8 mt-2">
+      <div class="col-10 mt-2">
         <h2>Users</h2>
         <table class="table table-stripped">
           <thead class="table-success">
