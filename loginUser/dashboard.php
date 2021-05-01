@@ -31,7 +31,7 @@ if ($result->num_rows > 0) {
            <td class='d-flex flex-column'>
             <a href='update.php?userID=" . $row['userID'] . "'><button class='btn bg-green text-light btn-sm w-100 mb-1' type='button'>Edit</button></a>
             <a href='delete.php?userID=" . $row['userID'] . "'><button class='btn bg-orange text-light btn-sm w-100 mt-1' type='button'>Delete</button></a>
-            <a href='adoptions.php?userID=" . $row['userID'] . "'><button class='btn bg-gold text-light btn-sm w-100 mt-1' type='button'>User's adoptions</button></a>
+            <a href='user-adoption.php?userID=" . $row['userID'] . "'><button class='btn bg-gold text-light btn-sm w-100 mt-1' type='button'>User's adoptions</button></a>
 
            </td>
         </tr>";
