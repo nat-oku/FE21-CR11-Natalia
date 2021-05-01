@@ -10,7 +10,7 @@
   $backBtn = '';
   //if it is a user it will create a back button to home.php
   if (isset($_SESSION["user"])){
-   $backBtn = "home.php";    
+   $backBtn = "profile.php";    
   }
   
   //if it is an adm it will create a back button to dashboard.php
