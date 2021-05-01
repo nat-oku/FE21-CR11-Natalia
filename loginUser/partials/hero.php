@@ -1,16 +1,12 @@
 <!-- Display hero section on the home.php page -->
 
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <img src="pictures/page_pics/alvan-nee-T-0EW-SEbsE-unsplash.jpg" class="heroImg" alt="...">
-    </div>
+<div class="card bg-light text-white border-0">
+  <img src="pictures/page_pics/alvan-nee-T-0EW-SEbsE-unsplash.jpg" class="card-img removeBorder rounded-0 myImage">
+  <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
+    <h5 class="card-title text-uppercase fs-1 fw-bold textShadow">Give a pet new home</h5>
+      <a class="btn border-gold shadow" href="register.php">Register</a>
+      <br>
+      <p class="card-text text-center textShadow ">Already have an account?</p>
+      <a class="btn border-green" href="login.php">Log in</a>
   </div>
 </div>
