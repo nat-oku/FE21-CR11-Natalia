@@ -29,11 +29,9 @@
         <a class="fs-4 fw-light text-green ms-2 me-2" href="pets/seniors.php?seniors">Our seniors</a>
       </div>
         <div class="me-1 ms-1">
-        <a class="btn bg-orange text-light me-1 " href="logout.php?logout">Logout</a>
+        <a class="btn bg-orange text-light me-1" href="logout.php?logout">Logout</a>
         </div>
       </div>
-
-
     </div>
     ';
   }
@@ -41,20 +39,16 @@
   if (isset($_SESSION['adm']) != "" ) {
     $navAdm = '
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="home.php?home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="dashboard.php?dashboard">Dashboard</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pets/seniors.php?seniors">Our seniors</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn nav-link" href="logout.php?logout">Logout</a>
-        </li>
-      </ul>
+      <div class="navbar-nav d-flex flex-row justify-content-between w-100">
+      <div class="me-1 ms-1 d-flex flex-row">
+        <a class="fs-4 fw-light text-green ms-2 me-2" href="home.php?home">Home</a>
+        <a class="fs-4 fw-light text-green ms-2 me-2" href="dashboard.php">Dashboard</a>
+        <a class="fs-4 fw-light text-green ms-2 me-2" href="pets/seniors.php?seniors">Our seniors</a>
+      </div>
+        <div class="me-1 ms-1">
+        <a class="btn bg-orange text-light me-1" href="logout.php?logout">Logout</a>
+        </div>
+      </div>
     </div>
     ';
   }
