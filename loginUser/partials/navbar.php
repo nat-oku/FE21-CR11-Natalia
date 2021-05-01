@@ -5,17 +5,16 @@
   if(!isset($_SESSION['adm']) && !isset ($_SESSION['user']) ) {
     $navInactive = '
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <p>Welcome</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn nav-link" href="login.php">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn nav-link" href="register.php">Register</a>
-        </li>
-      </ul>
+      <div class="navbar-nav d-flex flex-row justify-content-between w-100">
+        <div class="me-1 ms-1">
+          <a class="fs-4 fw-light text-green" href="index.php">Home</a>
+        </div>
+        <div class="me-1 ms-1">
+          <a class="btn border-gold me-1" href="register.php">Register</a>
+          <a class="btn border-green ms-1" href="login.php">Login</a>
+        </div>
+
+      </div>
     </div>
     ';
   }
@@ -70,7 +69,7 @@
   <div class="container-fluid">
     <a href="#" class="navbar-brand d-flex flex-column">
       <i class="fas fa-paw"></i>
-      <h4>VPA</h4>
+      <h4 class="">VPA</h4>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
