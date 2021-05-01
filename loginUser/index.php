@@ -29,6 +29,11 @@
     <?php require_once 'partials/hero.php' ?>
 
   </header>
+  <div class="container d-flex flex-column">
+    <a class="btn" href="login.php">Log in</a>
+    <a class="btn" href="register.php">Register</a>
+
+  </div>
   
 </body>
 </html>
