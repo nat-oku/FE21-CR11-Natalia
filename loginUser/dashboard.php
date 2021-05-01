@@ -89,8 +89,9 @@ $connect->close();
       <div class="col-2 d-flex flex-column align-items-center">
         <img class="userImage" src="pictures/avatar.png" alt="Adm avatar">
         <p class="">Administrator</p>
-        <a href="logout.php?logout" class="btn bg-orange text-light w-100 mb-1">Sign Out </a>
-        <a href="pets/index.php" class="btn bg-green text-light w-100 mt-1">See all pets</a>
+        <a href="pets/index.php" class="btn bg-green text-light w-100 mt-1 mb-1">See all pets</a>
+        <a href="adoptions.php" class="btn bg-gold text-light w-100 mt-1 mb-1">See all adoptions</a>
+        <a href="logout.php?logout" class="btn bg-orange text-light w-100 mt-1 mb-1">Sign Out </a>
       </div>
       <div class="col-10 mt-2">
         <h2>Users</h2>
