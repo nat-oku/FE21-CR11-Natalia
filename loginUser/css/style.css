@@ -65,8 +65,16 @@
   color: #d4af37;
 }
 
-.text-white {
+.text-lightGreen {
   color: #e0f0f0;
+}
+
+.text-orange {
+  color: #ff8474;
+}
+
+.text-lightGrey {
+  color: #e4ebeb;
 }
 
 /* changing color of bachground */
