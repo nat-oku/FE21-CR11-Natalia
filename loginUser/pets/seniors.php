@@ -92,7 +92,7 @@
   </header>
 
   <main>
-    <div class="container">
+    <div class="container mt-4 mb-4">
     <div class="mb-3 text-center">
         <h2>Our seniors <i class="far fa-heart text-orange"></i></h2>
         <h4 class="fw-light">Here you can find the senior animals who are older than 8 years and didn't find a home yet. <br> Will YOU adopt him?<h4>
