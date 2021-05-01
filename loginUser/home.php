@@ -47,8 +47,22 @@
     }
   } else {
     $colbody = '<div class="col">No Data Available</div>';
-  } 
+  }
 
+  if(isset($_POST['submitb'])) {
+    $petID = $_POST['petID'];
+    $userID = $_SESSION['user'];
+    $sql = "INSERT INTO pet_adoption (fk_petID, fk_userID) VALUES ('$petID', '$userID')";
+    if($connect->query($sql) === true){
+      $msg = 'Congrats, you adopted a pet!';
+      echo "<script type='text/javascript'>alert('$msg');</script>";
+    } else {
+      $msg = 'Something went wrong, try again later';
+      echo "<script type='text/javascript'>alert('$msg');</script>";
+    }
+  }
+
+  $connect->close();
 
 ?>
 
