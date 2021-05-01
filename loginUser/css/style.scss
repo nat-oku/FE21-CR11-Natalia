@@ -63,6 +63,7 @@
     color: $brand-color-6;
     
     &:hover {
+      border: 1.5px solid $brand-color-3;
       background-color: $brand-color-6;
       color: $brand-color-1;
     }

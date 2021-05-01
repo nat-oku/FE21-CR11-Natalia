@@ -51,6 +51,7 @@
 }
 
 .border-green:hover {
+  border: 1.5px solid #e0f0f0;
   background-color: #FFFFFF;
   color: #006665;
 }
