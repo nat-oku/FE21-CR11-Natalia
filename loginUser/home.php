@@ -28,10 +28,10 @@
     while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
       $colbody .='
         <div class="col fw-light">
-          <div class="card">
+          <div class="card card-group h-100">
             <img src="pictures/pets/'.$row['picture'].'" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Meet '.$row['pet_name'].'</h5>
+              <h5 class="card-title text-green">Meet '.$row['pet_name'].'</h5>
               <p class="card-text">'.$row['pet_descr'].'</p>
               <p class="card-text">Date of birth: '.$row['pet_date_of_birth'].'</p>
               <p class="card-text">Type: a '.$row['pet_size'].' '.$row['breed']. '</p>
