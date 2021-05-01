@@ -54,8 +54,8 @@
                width: 60% ;
            }  
            .img-thumbnail{
-               width: 70px !important;
-                height: 70px !important;
+              width: 300px !important;
+              height: 300px !important;
            }    
       <?php include '../css/style.css'; #adding css to file ?>
   </style>
@@ -66,11 +66,12 @@
     <!-- navbar -->
     <?php require_once '../partials/navbar.php' ?>
   </header>
-  <div class="container">
+  <div class="container mt-4 mb-4">
     <h2>Update request</h2>
-    <img class='img-thumbnail rounded-circle' src='../pictures/pets/<?php echo $picture ?>' alt="<?php echo $breed ?>">
-    
-    <form action="actions/a_update.php" method="post" enctype="multipart/form-data">
+    <div class="d-flex flex-row">
+      <img class='img-thumbnail m-4' src='../pictures/pets/<?php echo $picture ?>' alt="<?php echo $breed ?>">
+
+      <form action="actions/a_update.php" method="post" enctype="multipart/form-data">
       <table class="table">
         <tr>
           <th>Breed</th>
@@ -108,14 +109,17 @@
         <input type="hidden" name="petID" value= "<?php echo $data['petID'] ?>" />
         <input type="hidden" name= "picture" value= "<?php echo $data['picture'] ?>" />
         <td>
-          <button class ="btn btn-success" type="submit">Save Changes</button>
+          <button class ="btn bg-green text-light" type="submit">Save Changes</button>
         </td>
         <td>
-          <a href="index.php"><button class="btn btn-warning" type ="button">Back</button></a>
+          <a href="index.php"><button class="btn bg-orange text-light" type ="button">Back</button></a>
         </td>
         </tr>
       </table>
     </form>
+    </div>
+    
+
   </div>
   
 </body>
