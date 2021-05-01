@@ -1,14 +1,13 @@
 <!-- navbar for not logged in users -->
 
 <?php
-  require_once 'components/db_connect.php';
 
   if(!isset($_SESSION['adm']) && !isset ($_SESSION['user']) ) {
     $navInactive = '
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="home.php">Home</a>
+          <p>Welcome</a>
         </li>
         <li class="nav-item">
           <a class="btn nav-link" href="login.php">Login</a>
@@ -26,13 +25,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="home.php">Home</a>
+          <a class="nav-link" href="home.php?home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="profile.php">Your profile</a>
+          <a class="nav-link" href="profile.php?profile">Your profile</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pets/seniors.php">Our seniors</a>
+          <a class="nav-link" href="pets/seniors.php?seniors">Our seniors</a>
         </li>
 
         <li class="nav-item">
@@ -48,13 +47,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="home.php">Home</a>
+          <a class="nav-link" href="home.php?home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="dashboard.php">Dashboard</a>
+          <a class="nav-link" href="dashboard.php?dashboard">Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pets/seniors.php">Our seniors</a>
+          <a class="nav-link" href="pets/seniors.php?seniors">Our seniors</a>
         </li>
         <li class="nav-item">
           <a class="btn nav-link" href="logout.php?logout">Logout</a>
