@@ -81,13 +81,13 @@ $connect->close();
     <!-- navbar -->
     <?php require_once 'partials/navbar.php' ?>
   </header>
-  <div class="container">
+  <div class="container mt-4 mb-4">
     <div class="row">
-      <div class="col-2">
+      <div class="col-2 d-flex flex-column align-items-center">
         <img class="userImage" src="pictures/avatar.png" alt="Adm avatar">
         <p class="">Administrator</p>
-        <a  href="logout.php?logout">Sign Out </a>
-        <a href="pets/index.php">See all pets</a>
+        <a href="logout.php?logout" class="btn w-100 mb-1">Sign Out </a>
+        <a href="pets/index.php" class="btn w-100 mt-1">See all pets</a>
       </div>
       <div class="col-8 mt-2">
         <h2>Users</h2>
