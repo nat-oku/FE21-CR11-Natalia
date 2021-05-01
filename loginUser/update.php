@@ -105,7 +105,7 @@
     <?php require_once 'partials/navbar.php' ?>
   </header>
 
-  <div class="container">
+  <div class="container mt-4 mb-4">
     <h2>Update</h2>
     <div class="<?php echo $class; ?>" role="alert">
        <p><?php echo ($message) ?? ''; ?></p>
@@ -149,10 +149,10 @@
            <input type="hidden" name="userID" value="<?php echo $data['userID'] ?>" />
            <input type="hidden" name="picture" value="<?php echo $picture ?>"/>
            <td>
-             <button name="submit" class="btn btn-success" type="submit">Save Changes</button>
+             <button name="submit" class="btn bg-green text-light" type="submit">Save Changes</button>
             </td>
             <td>
-              <a href="<?php echo $backBtn?>"><button class="btn btn-warning" type="button">Back</button></a></td>
+              <a href="<?php echo $backBtn?>"><button class="btn bg-orange text-light" type="button">Back</button></a></td>
          </tr>
        </table>
     </form>

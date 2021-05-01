@@ -81,7 +81,7 @@
   <div class="<?php echo $class; ?>" role="alert" >
        <p><?php echo ($message) ?? ''; ?></p>           
   </div>
-  <div class="container">
+  <div class="container mt-4 mb-4">
     <h2>Delete user</h2>
     <img class='img-thumbnail rounded-circle' src='pictures/<?php echo $picture ?>' alt="<?php echo $f_name ?>">
     
@@ -98,8 +98,8 @@
     <form method="post">
       <input type="hidden" name ="userID" value= "<?php echo $userID ?>" />
       <input type="hidden" name="picture" value="<?php echo $picture ?>" />
-      <button class="btn btn-danger" type="submit">Yes, delete it!</button  >
-      <a href="dashboard.php" ><button class="btn btn-warning" type= "button">No, go back!</button></a>
+      <button class="btn bg-green text-light" type="submit">Yes, delete it!</button  >
+      <a href="dashboard.php" ><button class="btn bg-orange text-light" type= "button">No, go back!</button></a>
     </form>
 
   </div>
