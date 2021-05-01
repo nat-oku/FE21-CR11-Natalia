@@ -89,6 +89,7 @@
 
   <main>
     <div class="container">
+    <a href="<?php echo $backBtn?>" ><button class="btn btn-warning" type= "button">Back</button></a>
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <?= $colbody ;?>
       </div>
