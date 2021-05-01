@@ -18,7 +18,6 @@ $res = mysqli_query($connect, "SELECT * FROM user WHERE userID=". $_SESSION['use
 $row = mysqli_fetch_array($res, MYSQLI_ASSOC);
 
 
-$connect->close();
 ?>
 
 
@@ -36,7 +35,7 @@ height: 200px;
 }
 .hero {
    background: rgb(2,0,36);
-    background: linear-gradient(24deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);  
+    background: linear-gradient(24deg, rgba(0, 102, 101) 0%, rgba(0, 102, 101,0.5) 100%);  
 }
 <?php include 'css/style.css'; #adding css to file ?>
 
@@ -48,14 +47,17 @@ height: 200px;
     <?php require_once 'partials/navbar.php' ?>
   </header>
 
-  <div class ="container">
-   <div class="hero">
+  <div class ="container mt-4 mb-4">
+     <div class="mb-3">
+        <h2>Hi <?php  echo $row['first_name']; ?> <i class="far fa-heart text-orange"></i></h2>
+      <div>
+      <div class="hero">
        <img class= "userImage" src="pictures/<?php echo $row['picture']; ?>" alt="<?php echo $row['first_name']; ?>">
-       <p class ="text-white" >Hi <?php  echo $row['first_name']; ?></p >
+      </div>
+      <a href="update.php?userID=<?php echo $_SESSION['user'] ?>" class="btn bg-green text-light mt-2 me-1">Update your profile</a>
+      <a href="home.php" class="btn bg-gold text-light mt-2 ms-1">Check out our pets</a>
+
    </div>
-   <a href="logout.php?logout"> Sign Out</a>
-   <a href="update.php?id=<?php echo $_SESSION['user'] ?>">Update your profile</a>
-</div>
 </body >
 </html>
 
