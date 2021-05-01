@@ -91,13 +91,13 @@
 
   <main>
     <div class="container mt-4 mb-4">
-      <div class="mb-3">
+      <div class="mb-3 text-center">
         <h2>Welcome to Vienna Pet Adoption</h2>
 
         <h4 class="fw-light"><i class="far fa-heart text-orange"></i> Here you can find all our beloved animals which we rescued in the last years. <i class="far fa-heart text-light"></i><br><i class="far fa-heart text-light"></i> They are very keen to meet you <i class="far fa-heart text-orange"></i><h4>
         <h6 class="fw-light">With a click on the button "Take me home", you agree to adopt the selected pet.</h6>
-        <a href="<?php echo $backBtn?>" ><button class="btn bg-green text-light mt-1 mb-3" type="button">Back to your profile</button></a>
       </div>
+      <a href="<?php echo $backBtn?>" ><button class="btn bg-green text-light mt-1 mb-3" type="button">Back to your profile</button></a>
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <?= $colbody ;?>
       </div>
