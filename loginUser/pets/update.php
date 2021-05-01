@@ -95,14 +95,14 @@
         </tr>
         <tr>
           <th>Picture</th>
-          <td><input class ="form-control" type="file" name="picture"/></td>
+          <td><input class="form-control" type="file" name="picture"/></td>
         </tr>
         <tr>
           <th>Size</th>
           <td><input class ="form-control" type="text" name="pet_size" placeholder="small/large" value="<?php echo $pet_size ?>" /></td>
         </tr>
         <tr>
-          <th>Size</th>
+          <th>Address</th>
           <td><input class ="form-control" type="text" name="location" placeholder="Address of pet's current animal sanctuary" value="<?php echo $location ?>" /></td>
         </tr>
         <tr>
