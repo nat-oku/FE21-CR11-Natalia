@@ -82,8 +82,16 @@
   background-color: rgba(212, 175, 55, 0.9);
 }
 
-.bg-white {
+.bg-lightGreen {
   background-color: #e0f0f0;
+}
+
+.bg-orange {
+  background-color: #ff8474;
+}
+
+.bg-lightGrey {
+  background-color: #e4ebeb;
 }
 
 /* pointer style */
